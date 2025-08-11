@@ -1,0 +1,31 @@
+name: mico_habit_front # プロジェクトの名前
+description: "A new Flutter project." # プロジェクトの説明
+
+publish_to: 'none' # pub.devへの公開設定（'none'は公開しない）
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1 # プロジェクトが動作するために必要なDart SDKのバージョン範囲
+
+dependencies:
+  flutter:
+    sdk: flutter # Flutterフレームワーク自体への依存
+
+  cupertino_icons: ^1.0.8 # iOSスタイルアイコンを提供するCupertino Iconsパッケージ
+  velocity_x: ^4.1.1 # Tailwind CSSのようなユーティリティを提供するためのパッケージ
+
+  http: ^0.13.3
+  flutter_secure_storage: ^4.2.0
+  google_sign_in: ^5.2.1
+  flutter_dotenv: ^5.0.0
+  flutter_keychain: ^2.5.0  # <-- CHANGE THIS LINE
+dev_dependencies:
+  flutter_test:
+    sdk: flutter # Flutterテストフレームワークへの依存
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true # アプリケーションでMaterial Designアイコンとフォントを使用することを宣言
+  assets:
+    - .env
